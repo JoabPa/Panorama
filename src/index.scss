@@ -1,0 +1,28 @@
+// COLORS
+$greendos: #2e5f48;
+$greenblue: #204444;
+$green: #1c361d;
+$yellowgreen: #aea256;
+$killarney: #2b522b;
+$tussock: #c17343;
+$spring-wood: #f7edd2;
+$flax-smoke: #7c8768;
+$axolotl: #536646;
+$envy: #92ac8e;
+$pewter: #93a89c;
+$corduroy: #5a7164;
+$glade-green: #5c8559;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: fenwick, sans-serif;
+
+  line-height: 1.7;
+  color: rgb(255, 255, 255);
+}
