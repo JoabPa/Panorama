@@ -1,10 +1,43 @@
-@font-face {
-  font-family: "fenwick";
-  src: url("../fonts/Fenwick.ttf");
+.header {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../images/img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__container {
+    width: auto;
+    text-align: center;
+    transform: translateX(-2rem);
+
+    &--text {
+      font-size: 8.5rem;
+      font-weight: bold;
+      color: #f5edd1;
+    }
+
+    &--span {
+      text-transform: uppercase;
+      display: block;
+    }
+  }
 }
 
-.header {
-  height: 95vh;
-  background-color: #204444;
-  font-family: fenwick;
+.half-circle {
+  width: 15rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 7.5rem;
+  border-bottom-right-radius: 7.5rem;
+  background: #fff;
 }

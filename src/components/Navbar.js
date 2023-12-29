@@ -1,14 +1,35 @@
 import React from "react";
 import "./Navbar.scss";
-import logo from "../images/logo.png";
+import logo from "../images/logo-panorama.png";
 
 function Navbar(props) {
   return (
     <nav className="nav">
-      <img className="logo" src={logo} alt="Logo" />
-      <span>Services</span>
-      <span>Projects</span>
-      <div className="btn--contactus">Contact Us</div>
+      <img className="nav__logo" src={logo} alt="Logo" />
+
+      <div className="nav__right">
+        <ul className="nav__list">
+          <li>
+            <a href="https://github.com" className="nav__list--link">
+              SERVICES
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" className="nav__list--link">
+              PROCEDURE
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" className="nav__list--link">
+              PROJECTS
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="https://github.com" className="nav__list--btn">
+        <span class="nav__list--btn-text">GET A QUOTE!</span>
+      </a>
     </nav>
   );
 }
