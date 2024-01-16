@@ -1,21 +1,23 @@
 .projects {
-  background-color: #fff;
   height: min-content;
 
   &__title {
     text-align: center;
-    margin: 0rem 0 6rem 0;
+    margin: 0 0 6rem 0;
     font-size: 5rem;
   }
 
   &__gallery {
     //height: 100vh;
     display: grid;
+    background-color: #fff;
     grid-template: repeat(7, 5.87vw) / repeat(8, 1fr);
+    //4.35vw
+    //5.87vw
+    //12.5vh
 
     grid-gap: 1.5rem;
     padding: 1.5rem;
-    margin-bottom: 10rem;
   }
 }
 

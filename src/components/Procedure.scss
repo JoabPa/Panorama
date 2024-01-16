@@ -1,15 +1,13 @@
 .procedure {
   height: 102vh;
   margin-top: -5rem;
-  background-color: #fff;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   &__container {
-    height: 60%;
-    width: calc(100% - 16rem);
+    height: 65%;
+    width: calc(100vw - 17.5rem);
     background-color: rgb(44, 84, 44);
     display: flex;
     flex-direction: column;
@@ -24,10 +22,125 @@
     }
 
     &--steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      place-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      //grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      //grid-gap: 13rem;
+      padding: 0 7rem;
+      width: 100%;
       flex: 1;
     }
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+
+  &--1 {
+    animation: step-1 15s infinite;
+  }
+
+  &--2 {
+    animation: step-2 15s infinite;
+  }
+
+  &--3 {
+    animation: step-3 15s infinite;
+  }
+
+  &__img {
+    width: 25rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    align-self: center;
+    transform: translateY(-3.5rem);
+  }
+
+  &__heading {
+    font-size: 1.9rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}
+
+.arrow {
+  width: 10rem;
+}
+
+//////////  KEYFRAMES
+
+@keyframes step-1 {
+  0% {
+    filter: opacity(100%);
+  }
+
+  34% {
+    filter: opacity(100%);
+  }
+
+  40% {
+    filter: opacity(30%);
+  }
+
+  100% {
+    filter: opacity(30%);
+  }
+}
+
+@keyframes step-2 {
+  0% {
+    filter: opacity(30%);
+  }
+
+  34% {
+    filter: opacity(30%);
+  }
+
+  40% {
+    filter: opacity(100%);
+  }
+
+  67% {
+    filter: opacity(100%);
+  }
+
+  73% {
+    filter: opacity(30%);
+  }
+
+  100% {
+    filter: opacity(30%);
+  }
+}
+
+@keyframes step-3 {
+  0% {
+    filter: opacity(30%);
+  }
+
+  33% {
+    filter: opacity(30%);
+  }
+
+  67% {
+    filter: opacity(30%);
+  }
+
+  73% {
+    filter: opacity(100%);
+  }
+
+  100% {
+    filter: opacity(100%);
   }
 }

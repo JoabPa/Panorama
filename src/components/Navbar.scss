@@ -18,8 +18,10 @@
   &__list {
     list-style: none;
     width: 41rem;
-    margin-right: 34.5rem;
+    //margin-right: 34.5rem;
+    transform: translateX(-34.5rem);
     color: black;
+    font-size: 1.6rem;
 
     display: flex;
     flex-direction: row;
@@ -29,11 +31,11 @@
       &,
       &:link,
       &:visited {
-        font-size: 1.5rem;
         font-weight: bold;
         text-decoration: none;
         color: inherit;
         position: relative;
+        padding: 1.5rem 0;
       }
 
       &::before {
@@ -43,7 +45,7 @@
         height: 3px;
         border-radius: 2px;
         background-color: #18272f;
-        bottom: -5px;
+        bottom: 1rem;
         left: 0%;
         transform-origin: right;
         transform: scaleX(0);
@@ -62,7 +64,7 @@
       right: 8rem;
 
       font-family: inherit;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       text-align: center;
       font-weight: bold;
       text-decoration: none;

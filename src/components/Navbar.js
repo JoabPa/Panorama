@@ -28,7 +28,7 @@ function Navbar(props) {
       </div>
 
       <a href="https://github.com" className="nav__list--btn">
-        <span class="nav__list--btn-text">GET A QUOTE!</span>
+        <span className="nav__list--btn-text">GET IN TOUCH</span>
       </a>
     </nav>
   );

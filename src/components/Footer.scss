@@ -1,18 +1,18 @@
-/*Waves*/
 .wave {
-  padding: 0 0 0 0;
-}
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -10px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 400px;
+  &__waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -10px;
+
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 400px;
+
+    margin-top: 10rem;
+  }
 }
 
-/*Animation*/
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -55,60 +55,113 @@
 /*Footer*/
 
 .footer {
-  padding-top: 3rem;
-  height: 55rem;
+  height: 65vh;
   background-color: rgb(44, 84, 44);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
   color: black;
 
-  &__logo {
-    margin-left: 50px;
+  &__container {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8rem;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &-logo {
+        margin-bottom: 4rem;
+        .logo {
+          width: 12vw;
+        }
+      }
+
+      &-awards {
+        height: 10rem;
+        width: 25vw;
+        background-color: rgba(185, 185, 185, 0.1);
+      }
+    }
+
+    &--right {
+      width: 50vw;
+      display: grid;
+      grid-template-columns: 19vw 1fr;
+
+      &-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        align-self: center;
+
+        height: 60%;
+
+        font-size: 1.7rem;
+        border-right: 0.5rem solid black;
+
+        .contacts {
+          width: 100%;
+          margin: 1.5rem 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+
+          &__icon {
+            width: 4rem;
+          }
+          &__text {
+            transform: translateY(0.7rem);
+            margin-left: 1.5rem;
+          }
+        }
+      }
+
+      &-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+
+        .us {
+          &__heading {
+            font-size: 1.7rem;
+          }
+
+          &__text {
+            font-size: 1.35rem;
+            margin-bottom: 5rem;
+          }
+
+          &__socials {
+            width: 100%;
+            height: 5rem;
+            background-color: rgba(185, 185, 185, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-top: 0.2px solid rgb(167, 165, 165, 0.2);
   }
 }
 
-/*Logo section*/
-.logo-section {
-  padding-right: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 200px;
-}
-
-.contact-us__btn {
-  padding: 7px 60px;
-  border: 4.5px solid black;
-  text-decoration: none;
-  color: inherit;
-
-  &:hover {
-    background-color: grey;
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
-}
-
-/*Section-links section*/
-.sections-links,
-.social-media {
-  border-left: 1px solid black;
-  height: 200px;
-}
-
-.sections-links {
-  padding: 0 0 0 50px;
-}
-
-/* Social media*/
-.social-media {
-  padding: 10px 0 0 50px;
-  margin-right: 100px;
-}
-
-.instagram,
-.facebook,
-.twitter {
-  width: 32px;
-  margin-top: 15px;
+  .content {
+    height: 30vh;
+  }
 }
