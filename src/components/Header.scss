@@ -1,36 +1,59 @@
+@font-face {
+  font-family: "fenwick";
+  src: url("../fonts/Fenwick.ttf");
+}
+
 .header {
   height: 100vh;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   background-image: url(../images/header-background.jpg);
-  background-repeat: no-repeat;
   background-position: 50% 85%;
   background-size: cover;
   background-attachment: fixed;
 
   &__container {
-    width: auto;
-    text-align: center;
     transform: translateX(-2rem);
+    color: #fff;
 
-    &--text {
-      font-size: 8.5rem;
-      font-weight: bold;
-      color: #f5edd1;
+    &--title {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 12rem;
+      font-weight: 600;
+      display: block;
+      font-family: "fenwick";
     }
 
-    &--span {
-      text-transform: uppercase;
-      display: block;
+    &--text {
+      font-size: 7rem;
+      font-weight: 400;
     }
   }
 }
 
-.half-circle {
+.realistic-marker-highlight {
+  position: relative;
+}
+
+.realistic-marker-highlight:before {
+  content: "";
+  background-color: rgba(27, 53, 28, 0.7);
+  //rgb(43, 82, 43);
+  width: 106%;
+  height: 1.2em;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: -3.5rem;
+  top: -0em;
+  padding: 0 0.25em;
+}
+/*.half-circle {
   width: 15rem;
   height: 7.5rem;
   position: absolute;
@@ -40,4 +63,4 @@
   border-bottom-left-radius: 7.5rem;
   border-bottom-right-radius: 7.5rem;
   background: #fff;
-}
+}*/

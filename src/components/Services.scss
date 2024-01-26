@@ -1,27 +1,23 @@
 .services {
-  min-height: 103vh;
+  min-height: 100vh;
   max-height: min-content;
 
-  color: #1b351c;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   &__title {
     margin-top: 14rem;
-    margin-bottom: 3rem;
-    font-size: 5rem;
-    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 6rem;
+    font-weight: 700;
   }
 
   &__container {
-    margin: auto 20rem auto 20rem;
+    margin: auto 20rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 6rem;
-    align-content: center;
-    justify-items: center;
   }
 }
 
@@ -35,13 +31,17 @@
 
   border-radius: 1.5rem;
 
-  padding: 3.5rem;
+  padding: 5rem 4rem;
 
   transition: all 0.3s ease;
 
   &:hover {
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
     transform: scale(1.03);
+  }
+
+  &:hover p {
+    color: rgba(0, 0, 0, 1);
   }
 
   &__icon {
@@ -52,13 +52,13 @@
   }
 
   &__heading {
-    font-weight: bold;
-    font-size: 1.9rem;
-    align-self: center;
+    font-weight: 800;
+    font-size: 2rem;
   }
 
   &__text {
     font-size: 1.7rem;
     align-self: start;
+    color: rgba(0, 0, 0, 0.5);
   }
 }

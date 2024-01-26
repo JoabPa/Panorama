@@ -16,11 +16,6 @@ $greydark2: #777;
 $greydark3: #999;
 */
 
-@font-face {
-  font-family: "fenwick";
-  src: url("fonts/Fenwick.ttf");
-}
-
 :root {
   --color-primary: #204444;
   --grey-dark-1: #333;
@@ -40,8 +35,7 @@ html {
 }
 
 body {
-  font-family: "fenwick";
-  line-height: 1.6;
-  color: var(--grey-dark-1);
+  font-family: "Aleo", serif;
+  line-height: 1.7;
   background-color: #f8f8f8;
 }

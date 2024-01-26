@@ -3,25 +3,23 @@
 
   height: 9rem;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 35rem 0 8rem;
 
   &__logo {
     height: 90%;
-    margin-left: 8rem;
   }
 
   &__list {
     list-style: none;
     width: 41rem;
-    //margin-right: 34.5rem;
-    transform: translateX(-34.5rem);
     color: black;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
 
     display: flex;
     flex-direction: row;
@@ -31,7 +29,7 @@
       &,
       &:link,
       &:visited {
-        font-weight: bold;
+        font-weight: 700;
         text-decoration: none;
         color: inherit;
         position: relative;
@@ -44,7 +42,7 @@
         width: 100%;
         height: 3px;
         border-radius: 2px;
-        background-color: #18272f;
+        background-color: #000000;
         bottom: 1rem;
         left: 0%;
         transform-origin: right;
@@ -60,19 +58,12 @@
 
     &--btn {
       position: fixed;
-      top: 1.25rem;
+      top: 1rem;
       right: 8rem;
 
-      font-family: inherit;
-      font-size: 1.6rem;
-      text-align: center;
-      font-weight: bold;
       text-decoration: none;
-
-      color: black;
       background-color: #c17444;
 
-      width: auto;
       padding: 2rem 4rem;
       border-radius: 10rem;
       cursor: pointer;
@@ -80,10 +71,9 @@
       transition: 0.3s;
 
       &-text {
-        color: inherit;
-        position: relative;
-        z-index: 5;
-        padding-left: 0;
+        color: black;
+        font-size: 1.75rem;
+        font-weight: 800;
       }
 
       &:hover {
