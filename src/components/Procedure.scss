@@ -11,7 +11,7 @@
     background-color: rgb(44, 84, 44);
     display: flex;
     flex-direction: column;
-    color: #f5edd1;
+    color: #ffffff;
     border-radius: 5rem;
     box-shadow: 1rem 2rem 1rem rgba(grey, 0.8);
 
@@ -44,15 +44,15 @@
   width: 40rem;
 
   &--1 {
-    animation: step-1 15s infinite;
+    animation: step-1 9s infinite;
   }
 
   &--2 {
-    animation: step-2 15s infinite;
+    animation: step-2 9s infinite;
   }
 
   &--3 {
-    animation: step-3 15s infinite;
+    animation: step-3 9s infinite;
   }
 
   &__img {

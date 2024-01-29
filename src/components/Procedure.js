@@ -24,7 +24,7 @@ function Procedure() {
                     <animate
                       id="anim11"
                       attributeName="offset"
-                      dur="5s"
+                      dur="3s"
                       from="0"
                       to="1"
                       begin="0s; anim21.end"
@@ -34,7 +34,7 @@ function Procedure() {
                     <animate
                       id="anim12"
                       attributeName="offset"
-                      dur="5s"
+                      dur="3s"
                       from="0"
                       to="1"
                       begin="0s; anim22.end"
@@ -74,7 +74,7 @@ function Procedure() {
                   <stop offset="0" stopColor="#f5edd1">
                     <animate
                       id="anim21"
-                      dur="10s"
+                      dur="6s"
                       attributeName="offset"
                       from="0"
                       to="2"
@@ -84,7 +84,7 @@ function Procedure() {
                   <stop offset="0" stopColor="transparent">
                     <animate
                       id="anim22"
-                      dur="10s"
+                      dur="6s"
                       attributeName="offset"
                       from="0"
                       to="2"
