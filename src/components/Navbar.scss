@@ -20,6 +20,7 @@
     width: 41rem;
     color: black;
     font-size: 1.75rem;
+    cursor: pointer;
 
     display: flex;
     flex-direction: row;
@@ -60,6 +61,7 @@
       position: fixed;
       top: 1rem;
       right: 8rem;
+      z-index: 1000;
 
       text-decoration: none;
       background-color: #c17444;

@@ -1,6 +1,6 @@
 .procedure {
   height: 102vh;
-  margin-top: -5rem;
+  margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,8 @@
     &--title {
       text-align: center;
       margin-top: 7.5rem;
-      font-size: 5rem;
+      font-size: 6rem;
+      font-weight: 700;
     }
 
     &--steps {

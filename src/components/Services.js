@@ -9,7 +9,7 @@ import icon6 from "../images/PNG/number5.png";
 
 function Services() {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <h2 className="services__title">Our Services</h2>
 
       <div className="services__container">
