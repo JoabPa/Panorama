@@ -1,16 +1,30 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .contact-viewport {
-  height: 100vh;
-  background-color: rgb(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  transition: all 0.5s;
 }
 
 .contact {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 75vh;
-  width: 60vw;
+  max-width: 60vw;
   background-color: #fff;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
+  transition: all 0.5s;
 
   display: flex;
   flex-direction: row;
@@ -80,4 +94,34 @@
   color: #666;
   outline: none;
   border: none;
+
+  &__message {
+    padding-top: 13px;
+  }
+}
+
+.btn {
+  position: fixed;
+  top: 1rem;
+  right: 8rem;
+  z-index: 1000;
+
+  text-decoration: none;
+  background-color: #c17444;
+
+  padding: 2rem 4rem;
+  border-radius: 20rem;
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &-text {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+
+  &:hover {
+    transform: scale(110%) rotate(-2deg);
+  }
 }

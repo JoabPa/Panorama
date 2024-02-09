@@ -31,29 +31,23 @@ function Navbar(props) {
     <nav className="nav">
       <img className="nav__logo" src={logo} alt="Logo" />
 
-      <div className="nav__right">
-        <ul className="nav__list">
-          <li>
-            <btn className="nav__list--link" onClick={scrollToServices}>
-              SERVICES
-            </btn>
-          </li>
-          <li>
-            <btn className="nav__list--link" onClick={scrollToProcedure}>
-              PROCEDURE
-            </btn>
-          </li>
-          <li>
-            <btn className="nav__list--link" onClick={scrollToProjects}>
-              PROJECTS
-            </btn>
-          </li>
-        </ul>
-      </div>
-
-      <a href="https://github.com" className="nav__list--btn">
-        <span className="nav__list--btn-text">GET IN TOUCH</span>
-      </a>
+      <ul className="nav__list">
+        <li>
+          <button className="nav__list--link" onClick={scrollToServices}>
+            SERVICES
+          </button>
+        </li>
+        <li>
+          <button className="nav__list--link" onClick={scrollToProcedure}>
+            PROCEDURE
+          </button>
+        </li>
+        <li>
+          <button className="nav__list--link" onClick={scrollToProjects}>
+            PROJECTS
+          </button>
+        </li>
+      </ul>
     </nav>
   );
 }

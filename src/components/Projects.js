@@ -4,7 +4,11 @@ import "./Projects.scss";
 function Projects() {
   return (
     <section className="projects">
-      <h2 className="projects__title">Chech Our Work</h2>
+      <h2 className="projects__title">Our Projects</h2>
+      <p className="projects__subtitle">
+        Hover on the black and white images to see our work 👇
+      </p>
+
       <div className="projects__gallery">
         <div className="gallery__item gallery__item--1">
           <figure className="gallery__item--border"></figure>

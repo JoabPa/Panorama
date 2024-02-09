@@ -3,9 +3,16 @@
 
   &__title {
     text-align: center;
-    margin: 0 0 6rem 0;
+    margin-bottom: 0.5rem;
     font-size: 6rem;
     font-weight: 700;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
   &__gallery {
